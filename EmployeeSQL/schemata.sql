@@ -11,7 +11,8 @@ CREATE TABLE employees (
 	first_name VARCHAR NOT NULL,
 	last_name VARCHAR NOT NULL,
 	sex VARCHAR(1) NOT NULL,
-	hire_date DATE NOT NULL
+	hire_date DATE NOT NULL,
+	FOREIGN KEY (emp_title) REFERENCES titles(title_id)
 );
 
 -- View table columns and datatypes
